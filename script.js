@@ -3,10 +3,10 @@ const calendarContainer = document.querySelector(".container")
 
 const calendarDays = 25;
 
-const openDoor = (imagePath, dayUrlPath, event) => {
-  event.target.parentNode.style.backgroundImage = `url(${imagePath})`;
+const openDoor = (dayImagePath, dayUrlPath, event) => {
+  event.target.parentNode.style.backgroundImage = `url(${dayImagePath})`;
   event.target.style.opacity = "0";
-  event.target.style.backgroundColor = "#9ac1f4";
+  event.target.style.backgroundColor = "#394e34";
   setTimeout(() => {
     event.target.classList.remove("number")
     event.target.classList.add("play-btn")
@@ -15,9 +15,6 @@ const openDoor = (imagePath, dayUrlPath, event) => {
     event.target.style.backgroundColor = '';
     event.target.removeEventListener("click", openDoor);
   }, 2000);
-  
-  console.log(dayUrlPath);
-  console.log(imagePath);
 }
 
 const createCalendar = () => {
@@ -36,10 +33,10 @@ const createCalendar = () => {
     dayNumber = i + 1;
 
     const urlPaths = {
-      1: "https://www.youtube.com/watch?v=s2bzP9GSnAU",
+      1: "https://www.youtube.com/watch?v=2fG1Vifk5-8",
     };
 
-    let dayImagePath = `./images/advent-m-${dayNumber}.jpg`;
+    let dayImagePath = `./images/advent-d-${dayNumber}.jpg`;
     let dayUrlPath = urlPaths[dayNumber];
     
 

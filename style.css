@@ -16,10 +16,10 @@ a {
 .container {
   height: 90vh;
   max-width: 960px;
-  background-color: #5a6d3c;
-  background-image: url("./images/xmas-dog.jpg");
+  background-color: #394e34;
+  background-image: url("./images/xmas-cat.jpg");
   background-size: cover;
-  border: 3px solid #5a6d3c;
+  border: 3px solid #394e34;
   border-radius: 10px;
   box-shadow: 0 5px 30px 10px rgba(0,0,0,0.4);
   margin: 15px auto;
@@ -41,7 +41,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #5a6d3c;
+  border: 2px solid #394e34;
 }
 
 .number {
@@ -61,12 +61,12 @@ a {
 .btn-start {
   margin: 15px auto;
   display: block;
-  background-color: #f92519;
+  background-color: #ac8c75;
   color: white;
   padding: 10px;
   font-size: 20px;
   border-radius: 10px;
-  border: 1px solid #5a6d3c;
+  border: 1px solid #394e34;
 }
 
 .btn-start:hover {
