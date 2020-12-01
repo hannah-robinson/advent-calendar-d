@@ -14,7 +14,7 @@ const openDoor = (dayImagePath, dayUrlPath, event) => {
     event.target.style.opacity = "100";
     event.target.style.backgroundColor = '';
     event.target.removeEventListener("click", openDoor);
-  }, 2000);
+  }, 1500);
 }
 
 const createCalendar = () => {
