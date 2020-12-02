@@ -34,6 +34,7 @@ const createCalendar = () => {
 
     const urlPaths = {
       1: "https://www.youtube.com/watch?v=2fG1Vifk5-8",
+      2: "https://www.youtube.com/watch?v=f2BZNowCXws",
     };
 
     let dayImagePath = `./images/advent-d-${dayNumber}.jpg`;
