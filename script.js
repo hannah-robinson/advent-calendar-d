@@ -46,7 +46,7 @@ const createCalendar = () => {
     let dayUrlPath = urlPaths[dayNumber];
     
 
-    calendarDoorText.addEventListener("click", openDoor.bind(null, dayImagePath, dayUrlPath));
+    calendarDoorText.addEventListener("click", openDoor.bind(null, dayImagePath, dayUrlPath), {once:true});
   }
 }
 
