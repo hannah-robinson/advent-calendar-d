@@ -3,18 +3,24 @@ const calendarContainer = document.querySelector(".container")
 
 const calendarDays = 25;
 
-const openDoor = (dayImagePath, dayUrlPath, event) => {
-  event.target.parentNode.style.backgroundImage = `url(${dayImagePath})`;
-  event.target.style.opacity = "0";
-  event.target.style.backgroundColor = "#394e34";
-  setTimeout(() => {
-    event.target.classList.remove("number")
-    event.target.classList.add("play-btn")
-    event.target.innerHTML = `<a href=${dayUrlPath} target=”_blank” ><i class="far fa-play-circle"></i></a>`;
-    event.target.style.opacity = "100";
-    event.target.style.backgroundColor = '';
-    event.target.removeEventListener("click", openDoor);
-  }, 1500);
+const openDoor = (dayNumber, dayImagePath, dayUrlPath, event) => {
+  let currentTime = new Date();
+  let today = currentTime.getDate();
+  if (today < dayNumber) {
+    console.log("You're too early")
+  } else {
+    event.target.parentNode.style.backgroundImage = `url(${dayImagePath})`;
+    event.target.style.opacity = "0";
+    event.target.style.backgroundColor = "#394e34";
+    setTimeout(() => {
+      event.target.classList.remove("number")
+      event.target.classList.add("play-btn")
+      event.target.innerHTML = `<a href=${dayUrlPath} target=”_blank” ><i class="far fa-play-circle"></i></a>`;
+      event.target.style.opacity = "100";
+      event.target.style.backgroundColor = '';
+      event.target.removeEventListener("click", openDoor);
+    }, 1500);
+  }
 }
 
 const createCalendar = () => {
@@ -30,8 +36,6 @@ const createCalendar = () => {
     calendarDoorText.innerHTML = i + 1;
     calendarDoor.appendChild(calendarDoorText);
 
-    dayNumber = i + 1;
-
     const urlPaths = {
       1: "https://www.youtube.com/watch?v=2fG1Vifk5-8",
       2: "https://www.youtube.com/watch?v=f2BZNowCXws",
@@ -40,13 +44,14 @@ const createCalendar = () => {
       5: "https://www.youtube.com/watch?v=cExeSvmSXMA",
       6: "https://twitter.com/BobHagh/status/877920282710859776",
       7: "https://www.youtube.com/watch?v=n9kfdEyV3RQ",
+      8: "https://twitter.com/RawBeautyKristi/status/1276404767099482112",
     };
 
+    let dayNumber = i + 1;
     let dayImagePath = `./images/advent-d-${dayNumber}.jpg`;
     let dayUrlPath = urlPaths[dayNumber];
-    
 
-    calendarDoorText.addEventListener("click", openDoor.bind(null, dayImagePath, dayUrlPath), {once:true});
+    calendarDoorText.addEventListener("click", openDoor.bind(null, dayNumber, dayImagePath, dayUrlPath), {once:true});
   }
 }
 
