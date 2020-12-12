@@ -48,6 +48,7 @@ const createCalendar = () => {
       9: "https://twitter.com/MikeSington/status/1299074699385663488",
       10: "https://www.youtube.com/watch?v=2tk9wuADoxA",
       11: "https://twitter.com/PAYOLETTER/status/1274400424741789698",
+      12: "https://www.youtube.com/watch?v=29LDBdpNMRc",
     };
 
     let dayNumber = i + 1;
