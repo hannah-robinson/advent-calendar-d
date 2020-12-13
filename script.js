@@ -49,6 +49,11 @@ const createCalendar = () => {
       10: "https://www.youtube.com/watch?v=2tk9wuADoxA",
       11: "https://twitter.com/PAYOLETTER/status/1274400424741789698",
       12: "https://www.youtube.com/watch?v=29LDBdpNMRc",
+      13: "https://twitter.com/capnsaveahood/status/1033202382098722817",
+      14: "https://www.youtube.com/watch?v=Z8XJRXnIeow",
+      15: "https://twitter.com/vaughndavis/status/844623663357837313",
+      16: "https://twitter.com/Daily__Goats/status/1288375490563186688",
+      17: "https://www.youtube.com/watch?v=yg4Mq5EAEzw&feature=emb_logo",
     };
 
     let dayNumber = i + 1;
