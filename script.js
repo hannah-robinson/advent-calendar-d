@@ -22,6 +22,12 @@ const urlPaths = {
   16: "https://twitter.com/Daily__Goats/status/1288375490563186688",
   17: "https://www.youtube.com/watch?v=yg4Mq5EAEzw&feature=emb_logo",
   18: "https://www.youtube.com/watch?v=QE5ThMiTowk",
+  19: "https://www.youtube.com/watch?v=3gSSNHO1dDs",
+  20: "https://twitter.com/AlbertMacGloan/status/1029322865903108096",
+  21: "https://www.youtube.com/watch?v=2PWSJH02krs",
+  22: "https://www.youtube.com/watch?v=bEBouI4sMwk",
+  23: "https://www.reddit.com/r/ContagiousLaughter/comments/9dkw70/i_have_to_finish_this_scottish_granny/",
+  24: "https://www.youtube.com/watch?v=jq9FAWN6Fr0",
 };
 
 const openDoor = (event) => {
