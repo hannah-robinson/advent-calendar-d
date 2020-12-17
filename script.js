@@ -21,6 +21,7 @@ const urlPaths = {
   15: "https://twitter.com/vaughndavis/status/844623663357837313",
   16: "https://twitter.com/Daily__Goats/status/1288375490563186688",
   17: "https://www.youtube.com/watch?v=yg4Mq5EAEzw&feature=emb_logo",
+  18: "https://www.youtube.com/watch?v=QE5ThMiTowk",
 };
 
 const openDoor = (event) => {
