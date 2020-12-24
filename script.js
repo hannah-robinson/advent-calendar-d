@@ -28,6 +28,7 @@ const urlPaths = {
   22: "https://www.youtube.com/watch?v=bEBouI4sMwk",
   23: "https://www.reddit.com/r/ContagiousLaughter/comments/9dkw70/i_have_to_finish_this_scottish_granny/",
   24: "https://www.youtube.com/watch?v=jq9FAWN6Fr0",
+  25: "https://hannah-robinson.github.io/xmas-card/"
 };
 
 const openDoor = (event) => {
